@@ -1,0 +1,154 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.p{
+  height: 150vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 0;
+  margin-top: 60px;
+  background-attachment: fixed;
+}
+
+.S1, .S2 {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;   
+  justify-content:center;
+  width: 100%;    
+  height: 150vh;
+  transition: transform 0.8s ease; 
+}
+
+.S1 {
+  background-color: white;
+}
+
+.S2 {
+  background-color: black; 
+}
+
+
+.card{
+  background-color: rgb(163, 246, 218);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,1);
+  overflow: hidden;
+  transition: transform 1s ease;
+  width: 400px;
+  height: 600px;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  height: 150vh;
+  font-size: 50px;
+  padding-top: 20px;
+  margin-top: 40px;
+  transition: transform 0.8s ease;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Arial', sans-serif;
+}
+
+.S1 .text{
+  color: #333;
+}
+
+.S2 .text{
+  color: #E1D9D1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 3s ease-in-out;
+}
+
+.whiteButton, .blackButton {
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Arial', sans-serif;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  margin-top: 20px;
+  margin-bottom: 100px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+.whiteButton{
+  background-color: black;
+  color: white;
+}
+
+.blackButton{
+  background-color: white;
+  color: black;
+}
+
+.whiteButton:hover, .blackButton:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 1.2);
+}
+.whiteButton:active, .blackButton:active {
+  transform: scale(0.9);
+}
+
+@keyframes whiteToBlack {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: black;
+  }
+}
+
+@keyframes blackToWhite {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: white;
+  }
+}
+
+.whiteToBlack {
+  animation: whiteToBlack 2s ease-in-out;  
+}
+
+.blackToWhite {
+  animation: blackToWhite 2s ease-in-out;
+}
