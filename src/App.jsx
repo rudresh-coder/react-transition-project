@@ -38,7 +38,7 @@ function App() {
           </div>
           <div>
             <div className="card">
-              <img src="src/duck.jpg" alt="duck" className="card-img"/>
+              <img src="src/assets/duck.jpg" alt="duck" className="card-img"/>
             </div>
               <button className="whiteButton" type="button" onClick={handleWhite}>
                  Click For Black
@@ -51,7 +51,7 @@ function App() {
           </div>
           <div>
             <div className="card">
-              <img src="src/bridge.jpg" alt="bridge" className="card-img"/>
+              <img src="src/assets/bridge.jpg" alt="bridge" className="card-img"/>
             </div>
               <button className="blackButton" type="button" onClick={handleBlack}>
                 Click For white

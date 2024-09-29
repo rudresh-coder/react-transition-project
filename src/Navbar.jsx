@@ -1,6 +1,6 @@
 import React from "react";
 import './Navbar.css';
-import yinyangImage from './yinyang.jpg'; // Adjust path as needed
+import yinyangImage from './assets/yinyang.jpg';
 
 function Navbar() {
   return (
